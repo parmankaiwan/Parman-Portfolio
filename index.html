@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parman – Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Desktop Nav -->
+  <nav id="desktop-nav" aria-label="Primary">
+    <div class="logo">Parman Rojwongsuriya</div>
+    <ul class="nav-links">
+      <li><a href="#about">about <span class="toc-dot" data-for="#about"></span></a></li>
+      <li><a href="#experience">experience <span class="toc-dot" data-for="#experience"></span></a></li>
+      <li><a href="#projects">project <span class="toc-dot" data-for="#projects"></span></a></li>
+      <li><a href="#contact">contact <span class="toc-dot" data-for="#contact"></span></a></li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <nav id="hamburger-nav" aria-label="Mobile">
+    <div class="logo">Parman Rojwongsuriya</div>
+    <div class="hamburger-menu">
+      <button class="hamburger-icon" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <div id="mobile-menu" class="menu-links" role="menu">
+        <li><a href="#about" onclick="toggleMenu()">about</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">project</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/Pfp1.png" alt="Parman profile picture">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello i'm</p>
+      <h1 class="title">Parman</h1>
+      <p class="section__text__p2">Rojwongsuriya</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">Contact info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/feed/?trk=onboarding-landing'"/>
+        <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/parmankaiwan'"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">about Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about.jpg" alt="Profile" class="about"/>
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-card reveal">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+            <h3>Experience</h3>
+            <p>10+ years of<br>Swimming</p>
+          </div>
+          <div class="details-card reveal">
+            <img src="./assets/education.png" alt="Education icon" class="icon"/>
+            <h3>Education</h3>
+            <p>Student (Sophomore)<br/>Cats Academy Boston</p>
+          </div>
+        </div>
+        <div class="text-container reveal">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae explicabo
+            deserunt odit optio nemo officia cum expedita voluptatibus earum accusantium molestias
+            error aperiam nobis similique impedit minus quisquam, quaerat, quis ratione repellendus.
+            Quos, ut, fugit soluta aspernatur nulla dolore libero dolorem veritatis officiis
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'"/>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-card" data-card>
+          <h2 class="experience-sub-title">Extracurricular</h2>
+          <div class="article-container">
+            <article><img src="./assets/checkmark.png" alt="check" class="icon"><div><h3>Robotics</h3><p>Team Member</p></div></article>
+            <article><img src="./assets/checkmark.png" alt="check" class="icon"><div><h3>MUN</h3><p>Member</p></div></article>
+            <article><img src="./assets/checkmark.png" alt="check" class="icon"><div><h3>Chess Club</h3><p>Admin</p></div></article>
+            <article><img src="./assets/checkmark.png" alt="check" class="icon"><div><h3>Translanguaging Club</h3><p>Teacher</p></div></article>
+            <article><img src="./assets/checkmark.png" alt="check" class="icon"><div><h3>Swimming Club</h3><p>Founder</p></div></article>
+            <article><img src="./assets/checkmark.png" alt="check" class="icon"><div><h3>Math Club</h3><p>Team Member</p></div></article>
+          </div>
+        </div>
+
+        <div class="details-card" data-card>
+          <h2 class="experience-sub-title">Hobbies</h2>
+          <div class="article-container">
+            <article><img src="./assets/checkmark.png" alt="check" class="icon"><div><h3>Swimmer</h3><p>National Team</p></div></article>
+            <article><img src="./assets/checkmark.png" alt="check" class="icon"><div><h3>HTML & CSS</h3><p>Coding</p></div></article>
+            <article><img src="./assets/checkmark.png" alt="check" class="icon"><div><h3>Art</h3><p>Drawing & Design</p></div></article>
+            <article><img src="./assets/checkmark.png" alt="check" class="icon"><div><h3>Card Tricks</h3><p>Magician</p></div></article>
+            <article><img src="./assets/checkmark.png" alt="check" class="icon"><div><h3>Music</h3><p>Piano, Guitar, Saxophone</p></div></article>
+            <article><img src="./assets/checkmark.png" alt="check" class="icon"><div><h3>Sports Skills</h3><p>Football, Basketball, Table Tennis</p></div></article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'"/>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <p class="section__text__p1">Browse my recent</p>
+    <h1 class="title">projects</h1>
+    <div class="experience-details-container">
+      <div class="details-card color-container">
+        <div class="article-container">
+          <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project One</h2>
+        <div class="btn-container">
+          <button class="btn project-btn" onclick="location.href='https://github.com/parmankaiwan'">Github</button>
+          <button class="btn project-btn" onclick="location.href='https://github.com/parmankaiwan'">Live Demo</button>
+        </div>
+      </div>
+
+      <div class="details-card color-container">
+        <div class="article-container">
+          <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project Two</h2>
+        <div class="btn-container">
+          <button class="btn project-btn" onclick="location.href='https://github.com/parmankaiwan'">Github</button>
+          <button class="btn project-btn" onclick="location.href='https://github.com/parmankaiwan'">Live Demo</button>
+        </div>
+      </div>
+
+      <div class="details-card color-container">
+        <div class="article-container">
+          <img src="./assets/Project-3.png" alt="Project 3" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project Three</h2>
+        <div class="btn-container">
+          <button class="btn project-btn" onclick="location.href='https://github.com/parmankaiwan'">Github</button>
+          <button class="btn project-btn" onclick="location.href='https://github.com/parmankaiwan'">Live Demo</button>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'"/>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">contact</h1>
+
+    <div class="contact-container">
+      <div class="contact-card reveal">
+        <div class="contact-icons">
+          <img src="./assets/email.png" class="contact-icon" alt="Email">
+          <img src="./assets/linkedin.png" class="contact-icon" alt="LinkedIn">
+          <img src="./assets/github.png" class="contact-icon" alt="GitHub">
+        </div>
+
+        <h3 class="contact-heading">Email</h3>
+        <a class="contact-email" href="mailto:super19pm@gmail.com">super19pm@gmail.com</a>
+
+        <div class="contact-actions">
+          <button class="btn btn-color-1" onclick="location.href='mailto:super19pm@gmail.com'">Email me</button>
+          <button class="btn" onclick="location.href='https://www.linkedin.com/feed/?trk=onboarding-landing'">LinkedIn</button>
+          <button class="btn" onclick="location.href='https://github.com/parmankaiwan'">GitHub</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
